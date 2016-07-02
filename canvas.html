@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	 	
+
+		
+		
+		<style type="text/css">
+			  header {
+			  	text-align: center;
+			  	font-size: 40px;
+			  	font-family: helvetica;
+			  	color: red;
+			  	font-weight: bolder;
+			  }
+
+
+
+
+
+
+			  #myCanvas {
+				
+				background: black;
+				margin-top: 200px;
+				
+
+			}
+
+			.flex-container {                             /*CENTERS THE GAME */
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  height:100%;
+  
+  
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  
+}
+
+.flex-item {                                             
+  margin: auto;
+  
+  
+  
+}
+
+			body {
+				background:url(images/bamboo.jpg) no-repeat 0px 0px;
+				background-size: cover;
+				background-color: #0095DD;
+				
+			}
+			@media screen and (max-width: 650px){ /*--> SITE SHRINK
+			
+										NO SMALLER THAN 320PX*/
+			
+
+			header {
+				font-size: 30px;
+				margin-bottom: 50px;
+			}
+
+
+		}  
+
+
+		
+
+		</style>
+		
+
+	</head>
+<body>
+
+
+	
+<section class="flex-container">		
+	<canvas class="flex-item" id="canvas" width="480" height="320" style="border:50px solid #8B7355; border-opacity: 0.8;"><h3><h3></canvas>
+</section>
+	<script type="text/javascript" src="js/canvas.js"></script>
+
+	<header id="info">BRICK BREAKER!</header>
+	
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
